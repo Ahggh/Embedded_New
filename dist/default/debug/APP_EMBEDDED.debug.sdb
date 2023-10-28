@@ -1,0 +1,269 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4620 ]
+[d frameptr 4065 ]
+"9 E:\Mahmoud Bassam\APP_EMBEDDED\ECAL_layer/button/ecu_button.c
+[e E2813 . `uc
+OUTPUT 0
+INPUT 1
+]
+[e E2809 . `uc
+LOW 0
+HIGH 1
+]
+"23
+[e E2906 . `uc
+BUTTON_PRESSED 0
+BUTTON_REALASED 1
+]
+"54
+[e E2910 . `uc
+BUTTON_ACTIVE_LOW 0
+BUTTON_ACTIVE_HIGH 1
+]
+"38 E:\Mahmoud Bassam\APP_EMBEDDED\ECAL_layer/PIC18f_MCAL_gpio.c
+[e E2813 . `uc
+OUTPUT 0
+INPUT 1
+]
+"72
+[e E2809 . `uc
+LOW 0
+HIGH 1
+]
+"141
+[e E2827 . `uc
+PORTA_INDEX 0
+PORTB_INDEX 1
+PORTC_INDEX 2
+PORTD_INDEX 3
+PORTE_INDEX 4
+]
+"14 E:\Mahmoud Bassam\APP_EMBEDDED\ECAL_layer/Application.c
+[e E2817 . `uc
+PIN0 0
+PIN1 1
+PIN2 2
+PIN3 3
+PIN4 4
+PIN5 5
+PIN6 6
+PIN7 7
+]
+[e E2827 . `uc
+PORTA_INDEX 0
+PORTB_INDEX 1
+PORTC_INDEX 2
+PORTD_INDEX 3
+PORTE_INDEX 4
+]
+"21
+[e E2809 . `uc
+LOW 0
+HIGH 1
+]
+"44
+[e E2928 . `uc
+Motor_A 0
+Motor_B 1
+]
+"7 E:\Mahmoud Bassam\APP_EMBEDDED\ECAL_layer/DC_MOTOR/ecu_dc_motor.c
+[e E2813 . `uc
+OUTPUT 0
+INPUT 1
+]
+"40
+[e E2910 . `uc
+Motor_A 0
+Motor_B 1
+]
+"71
+[e E2809 . `uc
+LOW 0
+HIGH 1
+]
+"4 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"35 E:\Mahmoud Bassam\APP_EMBEDDED\ECAL_layer/Application.c
+[v _main main `(i  1 e 2 0 ]
+"5 E:\Mahmoud Bassam\APP_EMBEDDED\ECAL_layer/DC_MOTOR/ecu_dc_motor.c
+[v _dc_motor_intialize dc_motor_intialize `(uc  1 e 1 0 ]
+"40
+[v _dc_motor_move_right dc_motor_move_right `(uc  1 e 1 0 ]
+"84
+[v _dc_motor_move_left dc_motor_move_left `(uc  1 e 1 0 ]
+"129
+[v _dc_motor_stop dc_motor_stop `(uc  1 e 1 0 ]
+"19 E:\Mahmoud Bassam\APP_EMBEDDED\ECAL_layer/PIC18f_MCAL_gpio.c
+[v _gpio_pin_dirction_intialize gpio_pin_dirction_intialize `(uc  1 e 1 0 ]
+"72
+[v _gpio_pin_write_logic gpio_pin_write_logic `(uc  1 e 1 0 ]
+"101
+[v _gpio_pin_read_logic gpio_pin_read_logic `(uc  1 e 1 0 ]
+[s S371 . 1 `uc 1 M_pin 1 0 :3:0 
+`uc 1 M_port 1 0 :3:3 
+`uc 1 pin_state 1 0 :1:6 
+]
+"14 E:\Mahmoud Bassam\APP_EMBEDDED\ECAL_layer/Application.c
+[s S375 . 4 `[2]S371 1 Motor_A_PIN 2 0 `[2]S371 1 Motor_B_PIN 2 2 ]
+[v _Motor Motor `S375  1 e 4 0 ]
+"21
+[v _Motor_1 Motor_1 `S375  1 e 4 0 ]
+"9 E:\Mahmoud Bassam\APP_EMBEDDED\ECAL_layer/PIC18f_MCAL_gpio.c
+[v _tris_reg tris_reg `[5]*.39VEuc  1 e 10 0 ]
+"11
+[v _lat_reg lat_reg `[5]*.39VEuc  1 e 10 0 ]
+"13
+[v _port_reg port_reg `[3]*.39VEuc  1 e 6 0 ]
+"35 E:\Mahmoud Bassam\APP_EMBEDDED\ECAL_layer/Application.c
+[v _main main `(i  1 e 2 0 ]
+{
+"52
+} 0
+"129 E:\Mahmoud Bassam\APP_EMBEDDED\ECAL_layer/DC_MOTOR/ecu_dc_motor.c
+[v _dc_motor_stop dc_motor_stop `(uc  1 e 1 0 ]
+{
+[s S28 . 1 `uc 1 port 1 0 :3:0 
+`uc 1 pin 1 0 :3:3 
+`uc 1 dirction 1 0 :1:6 
+`uc 1 logic 1 0 :1:7 
+]
+"131
+[v dc_motor_stop@_Motor_A _Motor_A `[2]S28  1 a 2 15 ]
+"140
+[v dc_motor_stop@_Motor_B _Motor_B `[2]S28  1 a 2 13 ]
+"130
+[v dc_motor_stop@ret ret `uc  1 a 1 12 ]
+[s S371 . 1 `uc 1 M_pin 1 0 :3:0 
+`uc 1 M_port 1 0 :3:3 
+`uc 1 pin_state 1 0 :1:6 
+]
+"129
+[s S375 . 4 `[2]S371 1 Motor_A_PIN 2 0 `[2]S371 1 Motor_B_PIN 2 2 ]
+[v dc_motor_stop@dc_motor_config dc_motor_config `*.30S375  1 p 1 8 ]
+[v dc_motor_stop@Motor_target Motor_target `E2910  1 p 1 9 ]
+"175
+} 0
+"40
+[v _dc_motor_move_right dc_motor_move_right `(uc  1 e 1 0 ]
+{
+[s S28 . 1 `uc 1 port 1 0 :3:0 
+`uc 1 pin 1 0 :3:3 
+`uc 1 dirction 1 0 :1:6 
+`uc 1 logic 1 0 :1:7 
+]
+"42
+[v dc_motor_move_right@_Motor_A _Motor_A `[2]S28  1 a 2 15 ]
+"51
+[v dc_motor_move_right@_Motor_B _Motor_B `[2]S28  1 a 2 13 ]
+"41
+[v dc_motor_move_right@ret ret `uc  1 a 1 12 ]
+[s S371 . 1 `uc 1 M_pin 1 0 :3:0 
+`uc 1 M_port 1 0 :3:3 
+`uc 1 pin_state 1 0 :1:6 
+]
+"40
+[s S375 . 4 `[2]S371 1 Motor_A_PIN 2 0 `[2]S371 1 Motor_B_PIN 2 2 ]
+[v dc_motor_move_right@dc_motor_config dc_motor_config `*.30S375  1 p 1 8 ]
+[v dc_motor_move_right@Motor_target Motor_target `E2910  1 p 1 9 ]
+"83
+} 0
+"84
+[v _dc_motor_move_left dc_motor_move_left `(uc  1 e 1 0 ]
+{
+[s S28 . 1 `uc 1 port 1 0 :3:0 
+`uc 1 pin 1 0 :3:3 
+`uc 1 dirction 1 0 :1:6 
+`uc 1 logic 1 0 :1:7 
+]
+"86
+[v dc_motor_move_left@_Motor_A _Motor_A `[2]S28  1 a 2 15 ]
+"95
+[v dc_motor_move_left@_Motor_B _Motor_B `[2]S28  1 a 2 13 ]
+"85
+[v dc_motor_move_left@ret ret `uc  1 a 1 12 ]
+[s S371 . 1 `uc 1 M_pin 1 0 :3:0 
+`uc 1 M_port 1 0 :3:3 
+`uc 1 pin_state 1 0 :1:6 
+]
+"84
+[s S375 . 4 `[2]S371 1 Motor_A_PIN 2 0 `[2]S371 1 Motor_B_PIN 2 2 ]
+[v dc_motor_move_left@dc_motor_config dc_motor_config `*.30S375  1 p 1 8 ]
+[v dc_motor_move_left@Motor_target Motor_target `E2910  1 p 1 9 ]
+"127
+} 0
+"72 E:\Mahmoud Bassam\APP_EMBEDDED\ECAL_layer/PIC18f_MCAL_gpio.c
+[v _gpio_pin_write_logic gpio_pin_write_logic `(uc  1 e 1 0 ]
+{
+"73
+[v gpio_pin_write_logic@ret ret `uc  1 a 1 7 ]
+[s S28 . 1 `uc 1 port 1 0 :3:0 
+`uc 1 pin 1 0 :3:3 
+`uc 1 dirction 1 0 :1:6 
+`uc 1 logic 1 0 :1:7 
+]
+"72
+[v gpio_pin_write_logic@_pin_config _pin_config `*.30CS28  1 p 1 0 ]
+[v gpio_pin_write_logic@logic logic `E2809  1 p 1 1 ]
+"94
+} 0
+"5 E:\Mahmoud Bassam\APP_EMBEDDED\ECAL_layer/DC_MOTOR/ecu_dc_motor.c
+[v _dc_motor_intialize dc_motor_intialize `(uc  1 e 1 0 ]
+{
+[s S28 . 1 `uc 1 port 1 0 :3:0 
+`uc 1 pin 1 0 :3:3 
+`uc 1 dirction 1 0 :1:6 
+`uc 1 logic 1 0 :1:7 
+]
+"7
+[v dc_motor_intialize@_Motor_A _Motor_A `[2]S28  1 a 2 12 ]
+"16
+[v dc_motor_intialize@_Motor_B _Motor_B `[2]S28  1 a 2 10 ]
+"6
+[v dc_motor_intialize@ret ret `uc  1 a 1 9 ]
+[s S371 . 1 `uc 1 M_pin 1 0 :3:0 
+`uc 1 M_port 1 0 :3:3 
+`uc 1 pin_state 1 0 :1:6 
+]
+"5
+[s S375 . 4 `[2]S371 1 Motor_A_PIN 2 0 `[2]S371 1 Motor_B_PIN 2 2 ]
+[v dc_motor_intialize@dc_motor_config dc_motor_config `*.30S375  1 p 1 7 ]
+"39
+} 0
+"19 E:\Mahmoud Bassam\APP_EMBEDDED\ECAL_layer/PIC18f_MCAL_gpio.c
+[v _gpio_pin_dirction_intialize gpio_pin_dirction_intialize `(uc  1 e 1 0 ]
+{
+"20
+[v gpio_pin_dirction_intialize@ret ret `uc  1 a 1 6 ]
+[s S28 . 1 `uc 1 port 1 0 :3:0 
+`uc 1 pin 1 0 :3:3 
+`uc 1 dirction 1 0 :1:6 
+`uc 1 logic 1 0 :1:7 
+]
+"19
+[v gpio_pin_dirction_intialize@_pin_config _pin_config `*.30CS28  1 p 1 0 ]
+"41
+} 0
